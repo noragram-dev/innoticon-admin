@@ -16,7 +16,7 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 
-    compile 'com.github.noragram-dev:innoticon:0.1.83'
+    compile 'com.github.noragram-dev:innoticon:0.1.84'
     compile 'com.github.novemberizing:novemberizing.rx:0.1.97'
 
     compile 'com.github.xerial:sqlite-jdbc:3.16.1'
@@ -28,15 +28,3 @@ dependencies {
     compile 'com.google.firebase:firebase-admin:4.1.2'
     compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
 }
-
-//mainClassName = "innoticon.worker.Consumer"
-//
-//jar {
-//    manifest {
-//        attributes "Main-Class": "$mainClassName"
-//    }
-//
-//    from {
-//        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-//    }
-//}
