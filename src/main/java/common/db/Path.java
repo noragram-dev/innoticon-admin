@@ -5,11 +5,14 @@ package common.db;
  * @author novemberizing, me@novemberizing.net
  * @since 2017. 2. 11.
  */
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class Path {
     public static String getRootPath(String category){
         if(category==null){ return null; }
         return "/common/" + category;
     }
+
+    public static String getTelegramRootPath(){ return getRootPath("telegram"); }
 
     public static String getEmailRootPath(){ return getRootPath("email"); }
     public static String getEmailPath(String email) {
