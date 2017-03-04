@@ -13,6 +13,10 @@ public class Path {
     }
 
     public static String getTelegramRootPath(){ return getRootPath("telegram"); }
+    public static String getTelegramRootPath(Long id){
+        if(id==null){ return null; }
+        return getTelegramRootPath() + "/" + id;
+    }
 
     public static String getEmailRootPath(){ return getRootPath("email"); }
     public static String getEmailPath(String email) {
